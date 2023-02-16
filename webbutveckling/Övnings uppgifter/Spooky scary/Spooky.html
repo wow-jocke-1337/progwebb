@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Halloween</title>
+    <script
+      src="https://kit.fontawesome.com/4b39a549d2.js"
+      crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="spookycss.css" />
+  </head>
+  <body>
+    <h1>Halloween</h1>
+    <audio id="thunder" loop>
+      <source src="v43_halloween-audio-master_Evil_Laugh_Male.mp3" type="audio/mpeg" />
+    </audio>
+    <audio id="scream" loop>
+      <source src="Fnaf scream.mp3" type="audio/mpeg" />
+    </audio>
+
+    <img class="bild" id="image" src="Chica jumpscare.gif" alt="GFG image" />
+
+    <div class="centerer">
+      <i
+        class="fas fa-spider fa-5x fa-spin"
+        onclick="toggleAudio(document.getElementById('scream'))">
+      
+      </i>
+      <i
+        class="fas fa-ghost fa-5x fa-spin"
+        onclick="toggleAudio(document.getElementById('thunder'))" onclick="show()" id="btnID"></i>
+    </div>
+  </body>
+  <script>
+    function toggleAudio(audioElement) {
+      if (audioElement.paused) {
+        audioElement.play()
+      } else {
+        audioElement.pause()
+      }
+    }
+    function show() {
+        document.getElementById('image')
+         .style.display = "block";
+
+        document.getElementById('btnID')
+         .style.display = "none";
+    }
+  </script>
+</html>

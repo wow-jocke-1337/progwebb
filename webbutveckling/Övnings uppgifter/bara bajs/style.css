@@ -1,0 +1,86 @@
+/*
+  Den här klassen innehåller bilden på fortbollsplanen samt alla
+  div:ar som är spelare.
+*/
+body {
+  background-image: linear-gradient(to bottom right, rgb(244, 244, 244), rgb(0, 4, 255));
+}
+
+h1 {
+  text-align: center;
+  font-size: 1000%;
+  
+}
+
+.field-wrapper {
+  position: sticky;
+  top: 0;
+  }
+  
+  /*
+    Den här klassen sätter storleken på bilden av fotbollsplanen.
+  */
+  .football-field {
+    width: 100%;
+  }
+  
+  
+
+.player:hover{
+  background-color:rgba(73, 251, 8, 0.821);
+  font-size: 50px;
+  width: 50px;
+  line-height: 50px;
+}
+ /*
+    Inte jättesnyggt jag vet XD
+  */
+
+  /*
+    Den här klassen beskriver hur spelare ser ut, men positionerar dem inte.
+  */
+  .player {
+    position: absolute;
+    width: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Consolas, sans-serif;
+    background-color: rgba(255, 255, 255, 0.575);
+  }
+  
+  /* 
+    Skriv klasser för att placera ut spelarna nedan. 
+    Se exemplet som placerar ut målvakt och försvarare.
+    mitten av planen är = 48% (top till bottom)
+  */
+  .goalie {
+    top: 47%; 
+    left: 10%;
+  }
+  .defender {
+    left: 22%;
+  }
+  .center {
+    left: 35%;
+  }
+  .forward {
+    left: 45%;
+  }
+  .left-wing {
+    top: 18%;
+  }
+  .middle-wing {
+    top: 47%;
+  }
+  .right-wing {
+    top: 75%;
+  }
+  .left {
+    top: 30%;
+  }
+  .right {
+    top: 63%;
+  }
